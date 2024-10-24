@@ -17,4 +17,5 @@ sales revenue comparison and forecasted sales trends.
 
 ## **Table of Contents** ##
 
-[csc](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Sales-Data-Transformation-and-Data-Model-Development)
+- [Data Transformation and Data Model Development](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Sales-Data-Transformation-and-Data-Model-Development/readme.md)
+
