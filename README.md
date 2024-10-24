@@ -16,3 +16,5 @@ sales revenue comparison and forecasted sales trends.
 * Sales are predicted with 95% confidence to increase from 2K to 5K within the next 15 days.
 
 ## **Table of Contents** ##
+
+[csc](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Sales-Data-Transformation-and-Data-Model-Development)
