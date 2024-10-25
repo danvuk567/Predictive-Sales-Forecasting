@@ -1,4 +1,4 @@
-# Predictive-Sales-Forecasting
+# Predictive Sales Forecasting
 
 ![Sales Profit Trend Chart](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/sales_proftit_trend.jpg?raw=true)
 
