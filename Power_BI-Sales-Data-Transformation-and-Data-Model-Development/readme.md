@@ -14,21 +14,62 @@ The next approach was to identify how the data in *Sheet1* could be normalized t
 
 ## Data Transformation Steps
 
-The *Region* table is extracted by referencing *Sheet1* and keeping the *Country*, *City*, *State* and *Region* columns. Removed row duplicates and added a unique index column named *Region ID*.
+The *Region* table is extracted in Power Query by referencing *Sheet1* and keeping the *Country*, *City*, *State* and *Region* columns. Removed row duplicates and added a unique index column named *Region ID*.
 
 ![Region Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Region_table_transformation.jpg?raw=true)
 
-The *Product* table is extracted by referencing *Sheet1* and keeping the *Product ID*, *Category*, *Sub-Category* and *Product Name* columns. Removed row duplicates and found *Product ID* duplicates by referencing the *Product* table, doing a group by *Product ID* and checking for count > 1. Found 28 duplicates of *Product ID* which were removed from the *Product* table.
+The *Product* table is extracted in Power Query by referencing *Sheet1* and keeping the *Product ID*, *Category*, *Sub-Category* and *Product Name* columns. Removed row duplicates and found *Product ID* duplicates by referencing the *Product* table, doing a group by *Product ID* and checking for count > 1. Found 28 duplicates of *Product ID* which were removed from the *Product* table.
 
 ![Product Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Product_table_transformation.jpg?raw=true)
 
-The *Customers* table is extracted by referencing *Sheet1* and keeping the *Customer ID*, *Customer Name* and *Segment* columns. Removed row duplicates and checked that there are no duplicates by referencing the *Customers* table, doing a group by Customer ID and checking for count > 1. 
+The *Customers* table is extracted in Power Query by referencing *Sheet1* and keeping the *Customer ID*, *Customer Name* and *Segment* columns. Removed row duplicates and checked that there are no duplicates by referencing the *Customers* table, doing a group by Customer ID and checking for count > 1. 
 
 ![Customers Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Customers_table_transformation.jpg?raw=true)
 
-The *Sales* table is extracted by referencing *Sheet1* and removing the *Customer Name*, *Segment*, *Category*, *Sub-Category* and *Product Name* columns. Merged with the *Region* table by *Country*, *City*, *State* and *Region*. Added *Region ID* from *Region* table and removed the *Country*, *City*, *State* and *Region* columns. Added a unique index column named 'Sales ID'.
+The *Sales* table is extracted in Power Query by referencing *Sheet1* and removing the *Customer Name*, *Segment*, *Category*, *Sub-Category* and *Product Name* columns. Merged with the *Region* table by *Country*, *City*, *State* and *Region*. Added *Region ID* from *Region* table and removed the *Country*, *City*, *State* and *Region* columns. Added a unique index column named 'Sales ID'.
 
 ![Sales Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Sales_table_transformation.jpg?raw=true)
+
+# DAX Calculated Date Tables
+
+For dates, I created the **calculated table** called *Calendar* using **DAX** using the min and max dates from *Order Date* in the *Sales* table. We define the columns *Date*, *Year*, *Quarter*, *Month No* and *Day* with the following DAX code:
+
+    Calendar = 
+      VAR StartDate = MIN(Sales[Order Date])
+      VAR EndDate = MAX(Sales[Order Date])
+
+    RETURN
+        ADDCOLUMNS(
+            CALENDAR(StartDate, EndDate),
+            "Year", YEAR([Date]),
+            "Quarter", QUARTER([Date]),
+            "Month No", MONTH([Date]),
+            "Day", DAY([Date])
+        )
+
+In order to provide Month names in visuals that are sorted by *Month No*, I created a *Data table* called *MonthCal* using the following DAX code:
+
+    MonthCal = DATATABLE(
+        "Month Long", STRING,
+        "Month Short", STRING,
+        "Month No", INTEGER,
+        {
+            {"January", "Jan", 1},
+            {"February", "Feb", 2},
+            {"March", "Mar", 3},
+            {"April", "Apr", 4},
+            {"May", "May", 5},
+            {"June", "Jun", 6},
+            {"July", "Jul", 7},
+            {"August", "Aug", 8},
+            {"September", "Sep", 9},
+            {"October", "Oct", 10},
+            {"November", "Nov", 11},
+            {"December", "Dec", 12}
+        }
+    )
+
+
 
 
 
