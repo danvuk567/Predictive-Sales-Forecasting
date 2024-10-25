@@ -2,6 +2,8 @@
 
 ![Sales Profit Trend Chart](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/images/sales_proftit_trend.jpg?raw=true)
 
+![Power_BI_Equity_Report_4th_tab.jpg](https://github.com/danvuk567/SP500-Stock-Analysis/blob/main/images/Power_BI_Equity_Report_4th_tab.jpg?raw=true)
+
 ## **Objective** ##
 
 This is a Power Bi project I found on DataQuest: [DataQuest Power BI Projects](https://www.dataquest.io/blog/power-bi-projects/). The goal is to develop a predictive sales forecasting model using historical sales data. 
