@@ -24,7 +24,7 @@ sales revenue comparison and forecasted sales trends.
 - [Forecasting Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Forecasting-Page-Visuals/readme.md)
 
 ## **Data Sources Used** ##
-- [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Data-Source-Files/SuperStore Sales DataSet.xlsx)
+- [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx)
 
 ## **Technologies** ##
 
