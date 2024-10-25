@@ -8,7 +8,7 @@ sales revenue comparison and forecasted sales trends.
 
 ## **Highlights** ##
 
-* Overall, Superstore is a profitable business with 11% profit in 2020.
+* Overall, Superstore is a profitable business with 11% profit by 2020.
 * Although sales revenue has increased each month in 2020 compared to prior year, October and December of 2020 have shown significant decrease in profit compared to 2019. This is particularly evident in the Central region of the US.
 * Texas had the 3rd largest sales revenue of $116K with the highest loss of $14K. Costs associated with the products sold appear to be higher in that US State.
 * Approximately half (48%) of the sales were to Consumers for 2019 to 2020.
