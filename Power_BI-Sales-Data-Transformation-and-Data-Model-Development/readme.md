@@ -1,3 +1,6 @@
 # Power BI Sales Data Transformation and Data Model Development
 
-Before bringing in any data source in to Power BI to build a report, let's consolidate the data we need into a database view called *VW_Yahoo_Equity_Prices* to avoid bringing in unnecessary data. This is good practice when possibly dealing with large data sets and allows us to practice some data transformations in Power BI **Power Query**. We want to compare the stocks that have been active throughout the whole period in to avoid any performance bias. To do that, we'll define the view joining the GICS Industry Dimension hierarchy tables to the Fact table *Yahoo_Equity_Prices* and filter out stocks that don't share the same min date of existing pricing data.
+## Data Cleaning
+
+The first step was to import and clean the sheet using Power Query. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, errors and possible duplicates. The Returns column had errors which were replaced with 0's. The last 2 columns *ind1* and *ind2* had null values and were removed.
+
