@@ -2,15 +2,39 @@
 
 ## Data Cleaning
 
-The first step was to import and clean the [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. The *Returns* column had errors which were replaced with 0's and data type changed to *Whole Number*. The last 2 columns *ind1* and *ind2* had null values and were removed.
+The first step was to import and clean the *Sheet1* data source in the [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. The *Returns* column had errors which were replaced with 0's and data type changed to *Whole Number*. The last 2 columns *ind1* and *ind2* had null values and were removed.
 
 ## Data Mapping
 
-The next approach was to identify how the data could be normalized to seperate tables. Generally, we see that we have orders, customers, products, locations and sales. Customers, products and locations are essentially unique entities and can be extracted from the data as 3 separate Dimension tables. However the *Order ID* was not unique and *Order Date*, *Ship Date*, *Product ID* and *Sales* all had different variations which essentially dictated that orders could not be seperated from sales. The *Row ID+O6G3A1:R6* column is also not unique and connot be used as a unique Order key or Sales key. This observation was made by using the *Group By* feature in Power Query to count > 1 for any combination of these columns. The following **Data Mapping document** was then used to build the initial data model for the valid columns:
+The next approach was to identify how the data in *Sheet1* could be normalized to seperate tables. Generally, we see that we have orders, customers, products, locations and sales. Customers, products and locations are essentially unique entities and can be extracted from the data as 3 separate Dimension tables. However the *Order ID* was not unique and *Order Date*, *Ship Date*, *Product ID* and *Sales* all had different variations which essentially dictated that orders could not be seperated from sales. The *Row ID+O6G3A1:R6* column is also not unique and connot be used as a unique Order key or Sales key. This observation was made by using the *Group By* feature in Power Query to count > 1 for any combination of these columns. The following **Data Mapping document** was then used to build the initial data model for the valid columns:
 
 [SuperStore Data Mapping file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Power_BI-Sales-Data-Transformation-and-Data-Model-Development/SuperStore%20Data%20Mapping.xlsx)
 
-![SuperStore Data Mapping](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/SuperStore_Data_Mapping.JPG?raw=true)
+![SuperStore Data Mapping](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/SuperStore_Data_Mapping.jpg?raw=true)
+
+## Data Transformation Steps
+
+The *Region* table is extracted by referencing *Sheet1* and keeping the *Country*, *City*, *State* and *Region* columns. Removed row duplicates and added a unique index column named *Region ID*.
+
+![Region Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Region_table_transformation.jpg?raw=true)
+
+The *Product* table is extracted by referencing *Sheet1* and keeping the *Product ID*, *Category*, *Sub-Category* and *Product Name* columns. Removed row duplicates and found *Product ID* duplicates by referencing the *Product* table, doing a group by *Product ID* and checking for count > 1. Found 28 duplicates of *Product ID* which were removed from the *Product* table.
+
+![Product Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Product_table_transformation.jpg?raw=true)
+
+The *Customers* table is extracted by referencing *Sheet1* and keeping the *Customer ID*, *Customer Name* and *Segment* columns. Removed row duplicates and checked that there are no duplicates by referencing the *Customers* table, doing a group by Customer ID and checking for count > 1. 
+
+![Customers Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Customers_table_transformation.jpg?raw=true)
+
+The *Sales* table is extracted by referencing *Sheet1* and removing the *Customer Name*, *Segment*, *Category*, *Sub-Category* and *Product Name* columns. Merged with the *Region* table by *Country*, *City*, *State* and *Region*. Added *Region ID* from *Region* table and removed the *Country*, *City*, *State* and *Region* columns. Added a unique index column named 'Sales ID'.
+
+![Sales Table Transformation.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Sales_table_transformation.jpg?raw=true)
+
+
+
+
+
+
 
 
 
