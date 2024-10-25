@@ -69,6 +69,10 @@ In order to provide Month names in visuals that are sorted by *Month No*, I crea
         }
     )
 
+One of the **KPIs** in Dashboard looks at average delivery days. To formulate that, I create a calculated column using DAX called *DaystoDelivery* in the *Sales* table by subtracting the number of days between *Order Date* and *Ship Date*.
+
+        DaystoDelivery = DATEDIFF(Sales[Order Date],Sales[Ship Date], DAY)
+
 # Final Data Model 
 
 Lastly, I created relationships a **one-to-many relationship** between *Product_ID* in the *Product* table to *Product_ID* in the *Sales* table, *Region_ID* in the *Region* table to *Region_ID* in the *Sales* table, *Customer_ID* in the *Customers* table to *Customer_ID* in the *Sales* table, and *Date* in the *Calendar* table to *Order Date* in the *Sales* table. A one-to-many relationship is also created between *Month No* in the *CalMonth* table to *Month No* in the *Calendar* table.
