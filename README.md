@@ -32,9 +32,3 @@ sales revenue comparison and forecasted sales trends.
 - Extraction and transformation: Excel, Power Query
 - Dashboard: Power BI
 
-## **Star Schema Data Modelling** ##
-
-This basic Star schema for the project was designed using the principles of Dimension and Fact data modeling concepts.
-
-![Equity_Snowflake_Schema_ERD.jpg](https://github.com/danvuk567/SP500-Stock-Analysis/blob/main/images/Equity_Snowflake_Schema_ERD.jpg?raw=true)
-
