@@ -2,7 +2,6 @@
 
 ![Sales Profit Trend Chart](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/images/sales_proftit_trend.jpg?raw=true)
 
-![Power_BI_Equity_Report_4th_tab.jpg](https://github.com/danvuk567/SP500-Stock-Analysis/blob/main/images/Power_BI_Equity_Report_4th_tab.jpg?raw=true)
 
 ## **Objective** ##
 
