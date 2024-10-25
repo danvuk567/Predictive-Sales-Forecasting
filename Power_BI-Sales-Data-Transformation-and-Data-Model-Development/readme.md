@@ -2,7 +2,7 @@
 
 ## Data Cleaning
 
-The first step was to import and clean the [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. The *Returns* column had errors which were replaced with 0's and data type changed to *Whole Number*. The last 2 columns *ind1* and *ind2* had null values and were removed.
+The first step was to import and clean the [SuperStore Data Set Excel file]((https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. The *Returns* column had errors which were replaced with 0's and data type changed to *Whole Number*. The last 2 columns *ind1* and *ind2* had null values and were removed.
 
 ## Data Mapping
 
