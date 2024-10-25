@@ -10,7 +10,7 @@ The next approach was to identify how the data could be normalized to seperate t
 
 [SuperStore Data Mapping file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Power_BI-Sales-Data-Transformation-and-Data-Model-Development/SuperStore%20Data%20Mapping.xlsx)
 
-[SuperStore Data Mapping](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/SuperStore_Data_Mapping.JPG)
+![SuperStore Data Mapping](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/SuperStore_Data_Mapping.JPG?raw=true)
 
 
 
