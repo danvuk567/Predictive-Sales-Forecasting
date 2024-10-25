@@ -6,7 +6,7 @@ The first step was to import and clean the sheet using **Power Query**. All colu
 
 ## Data Mapping
 
-The next approach was to identify how the data could be normalized to seperate tables. Generally, we see that we have orders, customers, products, locations and sales. Customer, products and locations are essentially unique entities and can be extracted from the data as 3 separate Dimension tables. However the *Order ID* was not unique and *Order Date*, *Ship Date*, *Product ID* and *Sales* all had different variations which essentially dictated that orders could not be seperated from sales. The *Row ID+O6G3A1:R6* column is also not unique and connot be used as a unique Order key or Sales key. This observation was made by using the *Group By* feature in Power Query to count > 1 for any combination of these columns. The following **Data Mapping** was used to build the data model for the valid columns:
+The next approach was to identify how the data could be normalized to seperate tables. Generally, we see that we have orders, customers, products, locations and sales. Customer, products and locations are essentially unique entities and can be extracted from the data as 3 separate Dimension tables. However the *Order ID* was not unique and *Order Date*, *Ship Date*, *Product ID* and *Sales* all had different variations which essentially dictated that orders could not be seperated from sales. The *Row ID+O6G3A1:R6* column is also not unique and connot be used as a unique Order key or Sales key. This observation was made by using the *Group By* feature in Power Query to count > 1 for any combination of these columns. The following **Data Mapping document** was used to build the data model for the valid columns:
 
 
 
