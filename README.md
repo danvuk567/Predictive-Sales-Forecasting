@@ -1,6 +1,6 @@
 # Predictive-Sales-Forecasting
 
-![Sales Profit Trend Chart](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/images/sales_proftit_trend.jpg?raw=true)
+![Sales Profit Trend Chart](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/sales_proftit_trend.jpg?raw=true)
 
 ![Sales Profit Trend Chart](https://github.com/danvuk567/SP500-Stock-Analysis/blob/main/images/sales_proftit_trend.jpg?raw=true)
 
