@@ -2,7 +2,7 @@
 
 ## Data Cleaning
 
-The first step was to import and clean the *Sheet1* data source in the [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. The *Returns* column had errors which were replaced with 0's and data type changed to *Whole Number*. The last 2 columns *ind1* and *ind2* had null values and were removed.
+The first step was to import and clean the *Sheet1* data source in the [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx) using **Power Query**. All columns were checked for errors, missing values, duplicates. I used the *Column quality*, *Column distribution* and *Column profile* to identify where there might be missing values, discrepancies, errors and possible duplicates. The *Returns* column had errors which were replaced with 0's and data type changed to *Whole Number*. The last 2 columns *ind1* and *ind2* had null values and were removed. The *Sheet1* data source is disabled from being loaded. 
 
 ## Data Mapping
 
@@ -69,6 +69,15 @@ In order to provide Month names in visuals that are sorted by *Month No*, I crea
         }
     )
 
+# Final Data Model 
+
+Lastly, I created relationships a **one-to-many relationship** between *Product_ID* in the *Product* table to *Product_ID* in the *Sales* table, *Region_ID* in the *Region* table to *Region_ID* in the *Sales* table, *Customer_ID* in the *Customers* table to *Customer_ID* in the *Sales* table, and *Date* in the *Calendar* table to *Order Date* in the *Sales* table. A one-to-many relationship is also created between *Month No* in the *CalMonth* table to *Month No* in the *Calendar* table.
+
+![Power_BI_Sales_Data_Model_Relationships.jpg](https://github.com/danvuk567/SP500-Stock-Analysis/blob/main/images/Power_BI_Sales_Data_Model_Relationships.jpg?raw=true)
+
+And our final **Star Schema** Data Model now looks like this:
+
+![Power_BI_Final_Sales_Data_Model.jpg](https://github.com/danvuk567/SP500-Stock-Analysis/blob/main/images/Power_BI_Final_Sales_Data_Model.jpg?raw=true)
 
 
 
