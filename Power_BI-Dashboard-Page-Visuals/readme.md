@@ -14,16 +14,27 @@ The following **Card visual** KPIs aggregate the sales from the *Sales* table as
 
 ## Sales Donut Charts
 
-The following **Donut Charts** aggregate the sales from the *Sales* table as a sum of *Sales* by *Region* from the *Region* table, *Segment* from the *Customers* table, and *Payment Mode* from the *Sales* table.
+The **Donut Charts** aggregate the sales from the *Sales* table as a sum of *Sales* by *Region* from the *Region* table, *Segment* from the *Customers* table, and *Payment Mode* from the *Sales* table.
 
 ![Dashboard Donut Charts](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Dashboard_Donut_Charts.jpg?raw=true)
 
+## Monthly Sales Area Charts
+
+The following **Area Charts** compare Monthly Profit vs. prior year Monthly Profit and Monthly Sales vs. prior year Monthly Sales. *Month Long* from the *MonthCal* table is used for the *X-Axis*, *Year* from the *Calendar* table, and *Profit* and *Sales* from the *Sales* table in the *Legend*. 
 
 ![Dashboard Area Charts](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Dashboard_Area_Charts.jpg?raw=true)
 
+The **Clustered Bar Charts** aggregate the sales from the *Sales* table as a sum of *Sales* by *Ship Mode* from the *Sales* table, *Sub-Category* from the *Product* table, and *Category* from the *Product* table. 
+The Sub-Category Chart and the Category Chart were both filtered by top 3 sales.
+
 ![Dashboard Clustered Bar Charts](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Dashboard_Clustered_Bar_Charts.jpg?raw=true)
+
+## Sales and Profit by State Map Chart
+
+The *Map Chart* uses the *State* from the *Region* table, the sum of *Sales* from the *Sales* table for the *Bubble Size* and sum of *Profit from the *Sales* table in the *Tooltips*.
 
 ![Dashboard Map Chart](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Dashboard_Map_Chart.jpg?raw=true)
 
+Here is the final version of the Superstore Dashboard page:
 
 ![Dashboard Page](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI-Dashboard-Page.jpg?raw=true)
