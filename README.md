@@ -12,9 +12,9 @@ sales revenue comparison and forecasted sales trends.
 
 * Overall, Superstore is a profitable business with 11% profit by the end of 2020.
 * Although sales revenue has increased each month in 2020 compared to prior year, October and December of 2020 have shown significant decrease in profit compared to 2019. This is more prevelant in the Central region of the US.
-* Texas had the 3rd largest sales revenue of $116K with the highest loss of $14K. This US state should be a major concern for why costs associated with the products sold appear to be higher than other states.
-* Approximately half (48%) of the sales were to Consumers for 2019 to 2020.
-* A big portion (43%) of the sales had COD payment method for 2019 to 2020.
+* Texas had the 3rd largest sales revenue of $116K with the highest loss of $14K. This US state should be a concern as costs associated with the products sold appear to be higher than other states.
+* Approximately half (48%) of the sales were to Consumers by the end of 2020.
+* A large portion (43%) of the sales had COD payment method by the end of 2020.
 * Sales are predicted with 95% confidence to increase from 2K to 5K within the next 15 days.
 
 ## **Table of Contents** ##
