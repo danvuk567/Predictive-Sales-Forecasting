@@ -14,7 +14,7 @@ The following **Card visual** KPIs aggregate the sales from the *Sales* table as
 
 ## Sales Donut Charts
 
-The **Donut Charts** aggregate the sales from the *Sales* table as a sum of *Sales* by *Region* from the *Region* table, *Segment* from the *Customers* table, and *Payment Mode* from the *Sales* table. Approximately **half (48%)** of the sales were to **Consumers Segemnt** by 2020. A **large portion (43%)** of the sales had **COD payment Mode** by the end of 2020.
+The **Donut Charts** aggregate the sales from the *Sales* table as a sum of *Sales* by *Region* from the *Region* table, *Segment* from the *Customers* table, and *Payment Mode* from the *Sales* table. Approximately **half (48%)** of the sales were to **Consumers Segemnt** by the end of 2020. Also, a **large portion (43%)** of the sales had **COD payment Mode** by the end of 2020.
 
 ![Dashboard Donut Charts](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Dashboard_Donut_Charts.jpg?raw=true)
 
