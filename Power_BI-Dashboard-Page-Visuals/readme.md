@@ -31,8 +31,8 @@ The Sub-Category Chart and the Category Chart were both filtered by top 3 sales.
 
 ## Sales and Profit by State Map Chart
 
-The *Map Chart* uses the *State* from the *Region* table, the sum of *Sales* from the *Sales* table for the *Bubble Size* and sum of *Profit from the *Sales* table in the *Tooltips*. IN exploring the map overall and 
-by Region, Texas had the 3rd largest sales revenue of $116K with the highest loss of $14K. This US state should be a concern as costs associated with the products sold appear to be higher than other states.
+The *Map Chart* uses the *State* from the *Region* table, the sum of *Sales* from the *Sales* table for the *Bubble Size* and sum of *Profit from the *Sales* table in the *Tooltips*. In exploring the map overall and 
+by Region, **Texas** had the 3rd largest sales revenue of **$116K** with the highest loss of **-$14K**. This US state should be a concern as costs associated with the products sold appear to be higher than other states.
 
 ![Dashboard Map Chart](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Dashboard_Map_Chart.jpg?raw=true)
 
