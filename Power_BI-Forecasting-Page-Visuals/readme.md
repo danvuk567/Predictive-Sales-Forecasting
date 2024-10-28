@@ -4,6 +4,6 @@ The following **Line Chart** shows the total daily sales by order date. The Powe
 
 ![Forecasting Line Chart](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Sales_Forecasting_Line_Chart.jpg?raw=true)
 
-The **Clustered Bar Char** list total sales by state. **California** had the largest sales at **$0.34M** but **Texas** had the 3rd largest sales at **$0.12M** and as observed in the 
+The **Clustered Bar Char** list total sales by state. **California** had the largest sales at **$0.34M** but **Texas** had the 3rd largest sales at **$0.12M** which was also observed in the *Sales and Profit by State Map Chart* along with a **-14K** loss in profit. 
 
 ![Forecasting Page](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI-Forecasting-Page.jpg?raw=true)
