@@ -6,4 +6,8 @@ The following **Line Chart** shows the total daily sales by order date. The Powe
 
 The **Clustered Bar Char** list total sales by state. **California** had the largest sales at **$0.34M** but **Texas** had the 3rd largest sales at **$0.12M** which was also observed in the *Sales and Profit by State Map Chart* along with a **-14K** loss in profit. 
 
+![Forecasting Clustered Bar Chart](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Sales_Forecasting_Clustered_Bar_Chart.jpg?raw=true)
+
+Here is the final version of the Superstore Forecasting page:
+
 ![Forecasting Page](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI-Forecasting-Page.jpg?raw=true)
