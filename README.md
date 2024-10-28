@@ -15,7 +15,7 @@ sales revenue comparison and forecasted sales trends.
 * California had the largest sales revenue at $0.34M. However, Texas had the 3rd largest sales revenue of $116K with the highest loss in profits of -$14K. This US state appears to have costs associated with the products sold that are higher than most states which is of great concern.
 * Approximately half (48%) of the sales were to Consumers by the end of 2020.
 * A large portion (43%) of the sales had COD payment method by the end of 2020.
-* Sales are predicted with 95% confidence to increase from 2K to 5K within the next 15 days.
+* Sales are predicted to increase from $2.8K to around $5.3K within the next 15 days. With 95% confidence, there is a possiblity of dropping down to $1K but also possibly increasing up to $9.5K.
 
 ## **Table of Contents** ##
 
