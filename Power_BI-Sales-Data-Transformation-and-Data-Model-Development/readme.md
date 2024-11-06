@@ -75,7 +75,7 @@ One of the **KPIs** in Dashboard looks at average delivery days. To formulate th
 
 # Final Data Model 
 
-Lastly, I created relationships a **one-to-many relationship** between *Product_ID* in the *Product* table to *Product_ID* in the *Sales* table, *Region_ID* in the *Region* table to *Region_ID* in the *Sales* table, *Customer_ID* in the *Customers* table to *Customer_ID* in the *Sales* table, and *Date* in the *Calendar* table to *Order Date* in the *Sales* table. A one-to-many relationship is also created between *Month No* in the *CalMonth* table to *Month No* in the *Calendar* table.
+Lastly, I created a **one-to-many relationship** between *Product_ID* in the *Product* table to *Product_ID* in the *Sales* table, *Region_ID* in the *Region* table to *Region_ID* in the *Sales* table, *Customer_ID* in the *Customers* table to *Customer_ID* in the *Sales* table, and *Date* in the *Calendar* table to *Order Date* in the *Sales* table. A one-to-many relationship is also created between *Month No* in the *CalMonth* table to *Month No* in the *Calendar* table.
 
 ![Power_BI_Sales_Data_Model_Relationships.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Sales_Data_Model_Relationships.jpg?raw=true)
 
