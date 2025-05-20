@@ -10,4 +10,6 @@ The **Clustered Bar Char** list total sales by state. **California** had the lar
 
 Here is the final version of the Superstore Forecasting page:
 
-![Forecasting Page](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI-Forecasting-Page.jpg?raw=true)
+![Forecasting Page](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI-Forecasting-Page.jpg?raw=true)<br/><br/>
+
+:arrow_right: **Back to:** [Home Page](https://github.com/danvuk567/Predictive-Sales-Forecasting)
