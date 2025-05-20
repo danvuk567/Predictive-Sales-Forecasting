@@ -38,4 +38,7 @@ by Region, **Texas** had the 3rd largest sales revenue of **$116K** with the hig
 
 Here is the final version of the Superstore Dashboard page:
 
-![Dashboard Page](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI-Dashboard-Page.jpg?raw=true)
+![Dashboard Page](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI-Dashboard-Page.jpg?raw=true)<br/><br/>
+
+
+
