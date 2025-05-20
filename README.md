@@ -21,7 +21,7 @@ sales revenue comparison and forecasted sales trends.
 
 * [Data Transformation and Data Model Development](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Sales-Data-Transformation-and-Data-Model-Development)
 * [Dashboard Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Dashboard-Page-Visuals)
-* [Forecasting Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Forecasting-Page-Visuals)
+* [Forecasting Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Forecasting-Page-Visuals)
 
 ## :link: **Data Sources Used** ##
 * [SuperStore Data Set Excel file](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/Data-Source-Files/SuperStore%20Sales%20DataSet.xlsx)
