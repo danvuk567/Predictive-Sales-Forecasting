@@ -81,7 +81,9 @@ Lastly, I created a **one-to-many relationship** between *Product_ID* in the *Pr
 
 And our final **Star Schema** Data Model now looks like this:
 
-![Power_BI_Final_Sales_Data_Model.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Final_Sales_Data_Model.jpg?raw=true)
+![Power_BI_Final_Sales_Data_Model.jpg](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI_Final_Sales_Data_Model.jpg?raw=true)<br/><br/>
+
+:arrow_right: **Next:** [Power BI Dashboard Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Dashboard-Page-Visuals)
 
 
 
