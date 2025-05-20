@@ -40,5 +40,5 @@ Here is the final version of the Superstore Dashboard page:
 
 ![Dashboard Page](https://github.com/danvuk567/Predictive-Sales-Forecasting/blob/main/images/Power_BI-Dashboard-Page.jpg?raw=true)<br/><br/>
 
-
+:arrow_right: **Next:** [Power BI Forecasting Page Visuals](https://github.com/danvuk567/Predictive-Sales-Forecasting/tree/main/Power_BI-Forecasting-Page-Visuals)
 
